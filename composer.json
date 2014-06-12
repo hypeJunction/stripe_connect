@@ -1,0 +1,35 @@
+{
+	"name": "hypejunction/stripe-connect",
+	"type": "elgg-plugin",
+	"description": "This plugin provides an Elgg API layer for interfacing with Stripe Connect",
+	"homepage": "http://arckinteractive.com",
+	"minimum-stability": "stable",
+	"keywords": [
+		"elgg", "plugin", "payments", "stripe", "stripe connect"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Ismayil Khayredinov",
+			"email": "ismayil@arckinteractive.com"
+		}
+	],
+	"extra": {
+		"installer-name": "stripe_connect"
+	},
+	"autoload": {
+		"classmap": ["classes/"]
+	},
+	"config": {
+		"vendor-dir": "vendors",
+		"preferred-install": "dist"
+	},
+	"suggest": {
+		"acrckinteractive/stripe": "@stable"
+	},
+	"require": {
+		"php": ">=5.3.3",
+		"composer/installers": ">=1.0.8"
+	}
+}
+
