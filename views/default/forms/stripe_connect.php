@@ -32,7 +32,7 @@ if ($merchant_account) {
 	echo elgg_view_image_block($img, $body, array(
 		'class' => 'mam'
 	));
-} else if ($merchant->stripe_connect_profile) {
+} else if ($user->stripe_connect_profile) {
 
 	echo elgg_view('output/url', array(
 		'href' => StripeConnect::getAuthorizationURI($merchant),
